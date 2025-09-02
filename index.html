@@ -11,16 +11,16 @@
      
         <nav>
             <ul>
-                <li> <a href="#About">About Me</a></li>
-                <li> <a href="#Projects">My Projects</a></li>
-                <li> <a href="#Contacts">Contact Me</a></li>
+                <li> <a href="#About Me">About Me</a></li>
+                <li> <a href="#My Projects">My Projects</a></li>
+                <li> <a href="#Contact Me">Contact Me</a></li>
              </ul>
         </nav>
     </header>
 
     <!-- About Me Section -->
      <main>
-     <section id="About">
+     <section id="About Me">
      <h1>About me</h1>
      <img src="New folder\New Project 13 [7591C24].jpg" width="270" height="250">
      <p>Hi! My name is Fahad J. I am a computer science engineering student enthusiast about AI integrated web development and problem solving.I enjoy creating clean,multifunctional website and exploring new technologies.In my free time, I like to draw , play  games, and learn new programming languages.Feel free to connect with me through my social meadia for web development. </p>
@@ -31,7 +31,7 @@
 
     <!-- Project 1 section -->
     
-    <section id="Project 1">
+    <section id="My Projects">
         <h1>My Projects</h1>
         
         <h3>Project 1: Blog Website</h3>
@@ -43,11 +43,11 @@
             <p>This is my first project which is a blog website. I have used HTML.</p>
         </ul>
     
-</main>
+
 
     <!-- Project 2 section -->
    
-    <section id="Project 2">
+    <section id="My Projects">
         <h3>Project 2:Porfolio Website</h3>
         <ul>
             <li> <a href="https://github.com/fahadjaleel/My-Blog-Html">View Project 2</a></li>
@@ -77,7 +77,7 @@
  
 <!-- contact section -->
 
-    <section id="contacts">
+    <section id="Contact Me">
         <h1>Contact Me</h1>
         <form>
             <label for="Name">Name:</label>
@@ -87,26 +87,26 @@
             <input type="email" id="Email" placeholder="E.g youemail@gmail.com" name="Email" required>     
             
             <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject" placeholder="E.g Web development" required>
-         </form> 
+            <input type="text" id="subject" name="subject" placeholder="E.g Web development" required minlength="5" maxlength="30">
+         
          <br></br>
         
          <!-- Important Contact case  -->
-         <form>
             <label for="Phone">Phone Number:</label>
             <input type="tell" id="Phone" name="phone"  placeholder="E.G +91 1234567890" pattern="\+91[0-9]{10}" required>
         
             <label for="Message">Message:</label>
             <input type="text" id="Message" size="50" name="Message" placeholder="E.g Hello, I am interested in your web development services." ; required>
             <br></br>
-        </form>
+       
 
         <!-- Text input for projects -->
          <label for="feedback">Thoughts about my projects:</label>
-         <textarea id="feedback" name="Thoughts about my projects" rows ="4" cols="50" placeholder=""></textarea>
+         <textarea id="feedback" name="Thoughts about my projects" rows ="4" cols="50" placeholder="" required ></textarea>
          <br></br>
          <button type="submit">Submit</button>
-          <button type="reset">Reset</button>
+         <button type="reset">Reset</button>
+         </form> 
 
          <br></br>
         
@@ -122,6 +122,7 @@
      <footer>
         <p>Copyright &copy; 2023</p>
         <p>Follow me on social media</p>
+     </footer>
 
 </main>
 
