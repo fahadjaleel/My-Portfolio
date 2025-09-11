@@ -1,131 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fahad's Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- Linked CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--Header Section  -->
-    <header>
-     
-        <nav>
-            <ul>
-                <li> <a href="#About Me">About Me</a></li>
-                <li> <a href="#My Projects">My Projects</a></li>
-                <li> <a href="#Contact Me">Contact Me</a></li>
-             </ul>
-        </nav>
-    </header>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#my-projects">My Projects</a></li>
+        <li><a href="#contact-me">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- About Me Section -->
-     <main>
-     <section id="About Me">
-     <h1>About me</h1>
-     <img src="New folder\New Project 13 [7591C24].jpg" width="270" height="250">
-     <p>Hi! My name is Fahad J. I am a computer science engineering student enthusiast about AI integrated web development and problem solving.I enjoy creating clean,multifunctional website and exploring new technologies.In my free time, I like to draw , play  games, and learn new programming languages.Feel free to connect with me through my social meadia for web development. </p>
+  <!-- About Me Section -->
+  <main>
+    <section id="about-me">
+      <h1>About Me</h1>
+      <img src="New folder/New Project 13 [7591C24].jpg" alt="My Photo" width="300" height="250">
+      <p>
+        Hi! My name is Fahad J. I am a computer science engineering student
+        enthusiastic about AI-integrated web development and problem solving.
+        I enjoy creating clean, multifunctional websites and exploring new technologies.
+        In my free time, I like to draw, play games, and learn new programming languages.
+        Feel free to connect with me through my social media for web development.
+      </p>
     </section>
-    
 
-<br>
+    <!-- Projects Section -->
+    <section id="my-projects">
+      <h1>My Projects</h1>
 
-    <!-- Project 1 section -->
-    
-    <section id="My Projects">
-        <h1>My Projects</h1>
-        
+      <div class="project-card">
         <h3>Project 1: Blog Website</h3>
-        <ul>
-            <li> <a href="https://my-blog-html17.netlify.app/">View project 1</a></li>
-            <br>
-            <img src="Project 1\IMG-20250822-WA0132.jpg" alt="Outlook of Project 1" width="500" height="400">
-            <br>
-            <p>This is my first project which is a blog website. I have used HTML.</p>
-        </ul>
-    
+        <a href="https://my-blog-html17.netlify.app/" target="_blank">View Project 1</a>
+        <img src="Project 1/IMG-20250822-WA0132.jpg" alt="Outlook of Project 1">
+        <p>This is my first project which is a blog website. I have used HTML.</p>
+      </div>
 
-
-    <!-- Project 2 section -->
-   
-    <section id="My Projects">
-        <h3>Project 2:Porfolio Website</h3>
-        <ul>
-            <li> <a href="https://github.com/fahadjaleel/My-Blog-Html">View Project 2</a></li>
-            <p>Preview</p>
-            <img src="Projects 2\Screenshot 2025-08-23 122304.jpg" alt="Outlook of Project 2 (page1)" width="500" height="400">
-            <br>
-            <p>This is my second project which is a portfolio website using HTML></p>
-        </ul>
+      <div class="project-card">
+        <h3>Project 2: Portfolio Website</h3>
+        <a href="https://github.com/fahadjaleel/My-Blog-Html" target="_blank">View Project 2</a>
+        <img src="Projects 2/Screenshot 2025-08-23 122304.jpg" alt="Outlook of Project 2">
+        <p>This is my second project which is a portfolio website using HTML.</p>
+      </div>
     </section>
 
-<br>
- 
-<!-- Rate my projects -->
-          <p>Rate my projects:</p>
-          <label for="Excellent">Good</label>
-          <input type="radio" name="rating" id="excellent" value="excellent" required>    
-          
+    <!-- Contact Section -->
+    <section id="contact-me">
+      <h1>Contact Me</h1>
+      <form>
+        <label for="Name">Name:</label>
+        <input type="text" id="Name" name="Name" placeholder="E.g Fahad J" required>
 
-           <label for="neutral">Neutral</label>     
-          <input type="radio" name="rating" id="neutral" value="neutral" required>
-          
-          <label for="bad">Bad</label>     
-          <input type="radio" name="rating" id="bad" value="bad" required>
-          
-          <br><br>
+        <label for="Email">Email:</label>
+        <input type="email" id="Email" name="Email" placeholder="E.g youremail@gmail.com" required>
 
- 
-<!-- contact section -->
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" placeholder="E.g Web Development" required>
 
-    <section id="Contact Me">
-        <h1>Contact Me</h1>
-        <form>
-            <label for="Name">Name:</label>
-            <input type="text" id="Name" placeholder="E.g Fahad J" name="Name" required>
-        
-            <label for="Email">Your mail:</label> 
-            <input type="email" id="Email" placeholder="E.g youemail@gmail.com" name="Email" required>     
-            
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject" placeholder="E.g Web development" required minlength="5" maxlength="30">
-         
-         <br></br>
-        
-         <!-- Important Contact case  -->
-            <label for="Phone">Phone Number:</label>
-            <input type="tell" id="Phone" name="phone"  placeholder="E.G +91 1234567890" pattern="\+91[0-9]{10}" required>
-        
-            <label for="Message">Message:</label>
-            <input type="text" id="Message" size="50" name="Message" placeholder="E.g Hello, I am interested in your web development services." ; required>
-            <br></br>
-       
+        <label for="Phone">Phone Number:</label>
+        <input type="tel" id="Phone" name="Phone" placeholder="+91 1234567890" required>
 
-        <!-- Text input for projects -->
-         <label for="feedback">Thoughts about my projects:</label>
-         <textarea id="feedback" name="Thoughts about my projects" rows ="4" cols="50" placeholder="" required ></textarea>
-         <br></br>
-         <button type="submit">Submit</button>
-         <button type="reset">Reset</button>
-         </form> 
+        <label for="Message">Message:</label>
+        <textarea id="Message" name="Message" rows="4" placeholder="E.g Hello, I am interested in your services." required></textarea>
 
-         <br></br>
-        
-        
-         
-          
-          <p>Thank You For Visiting</p> 
+        <button type="submit">Submit</button>
+        <button type="reset" class="reset-btn">Reset</button>
+      </form>
     </section>
+  </main>
 
-<br></br>
-
-<!-- Footer section -->
-     <footer>
-        <p>Copyright &copy; 2023</p>
-        <p>Follow me on social media</p>
-     </footer>
-
-</main>
-
-
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2023 Fahad J. All rights reserved.</p>
+    <p>Follow me on social media</p>
+  </footer>
 </body>
 </html>
