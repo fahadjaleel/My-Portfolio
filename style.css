@@ -1,11 +1,11 @@
-/* Global Reset */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Fonts & Background */
+/* Body */
 body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #f0f4ff, #d9e4ff);
@@ -13,30 +13,51 @@ body {
   line-height: 1.6;
 }
 
-/* Navigation */
+/* Header */
 header {
   background: #2c3e50;
-  padding: 15px 0;
+  padding: 15px 5%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-nav ul {
+nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-links {
   list-style: none;
+  display: flex;
 }
 
-nav ul li {
-  margin: 0 20px;
+.nav-links li {
+  margin-left: 20px;
 }
 
-nav ul li a {
+.nav-links a {
   text-decoration: none;
   color: #fff;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+.nav-links a:hover {
   color: #f39c12;
 }
 
@@ -52,16 +73,15 @@ h1 {
   color: #2c3e50;
 }
 
-/* About Section */
+/* About */
 #about-me img {
-  width: 270px;
-  height: 250px;
+  max-width: 250px;
   border-radius: 15px;
   box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
   margin: 20px 0;
 }
 
-/* Project Cards */
+/* Projects */
 .project-card {
   background: #fff;
   padding: 20px;
@@ -79,11 +99,12 @@ h1 {
 
 .project-card img {
   width: 100%;
+  height: auto;
   border-radius: 10px;
-  margin: 15px 0;
+  margin-bottom: 15px;
 }
 
-/* Contact Form */
+/* Contact */
 form {
   display: flex;
   flex-direction: column;
@@ -107,7 +128,6 @@ form input, form textarea {
   border: 1px solid #ccc;
   border-radius: 8px;
   outline: none;
-  transition: border 0.3s ease;
 }
 
 form input:focus, form textarea:focus {
@@ -123,21 +143,11 @@ button {
   color: #fff;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition: background 0.3s ease;
 }
 
 button:hover {
   background: #2980b9;
-  transform: scale(1.05);
-}
-
-.reset-btn {
-  background: #e74c3c;
-  margin-top: 10px;
-}
-
-.reset-btn:hover {
-  background: #c0392b;
 }
 
 /* Footer */
@@ -147,4 +157,58 @@ footer {
   text-align: center;
   padding: 20px;
   margin-top: 40px;
+}
+
+/* ---------------- Responsive Design ---------------- */
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #2c3e50;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 30px 5%;
+  }
+
+  .project-card {
+    max-width: 100%;
+  }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .project-card {
+    max-width: 80%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 2.2rem;
+  }
 }

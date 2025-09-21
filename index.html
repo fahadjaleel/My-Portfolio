@@ -6,17 +6,19 @@
   <title>Fahad's Portfolio</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <!-- Linked CSS -->
-  <link rel="stylesheet" href="style.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <!-- Header Section -->
   <header>
     <nav>
-      <ul>
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#my-projects">My Projects</a></li>
-        <li><a href="#contact-me">Contact Me</a></li>
+      <div class="logo">Fahad J</div>
+      <div class="menu-toggle">&#9776;</div>
+      <ul class="nav-links">
+        <li><a href="#about-me">About</a></li>
+        <li><a href="#my-projects">Projects</a></li>
+        <li><a href="#contact-me">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -25,13 +27,11 @@
   <main>
     <section id="about-me">
       <h1>About Me</h1>
-      <img src="New folder/New Project 13 [7591C24].jpg" alt="My Photo" width="300" height="250">
+      <img src="/New folder/New Project 13 [7591C24].jpg" alt="My Photo">
       <p>
-        Hi! My name is Fahad J. I am a computer science engineering student
-        enthusiastic about AI-integrated web development and problem solving.
-        I enjoy creating clean, multifunctional websites and exploring new technologies.
-        In my free time, I like to draw, play games, and learn new programming languages.
-        Feel free to connect with me through my social media for web development.
+        Hi! I’m <strong>Fahad J</strong>, a Computer Science Engineering student passionate about 
+        <em>AI-integrated web development</em> and problem solving.  
+        I love creating clean, functional websites and exploring new technologies.
       </p>
     </section>
 
@@ -40,18 +40,19 @@
       <h1>My Projects</h1>
 
       <div class="project-card">
-        <h3>Project 1: Blog Website</h3>
-        <a href="https://my-blog-html17.netlify.app/" target="_blank">View Project 1</a>
-        <img src="Project 1/IMG-20250822-WA0132.jpg" alt="Outlook of Project 1">
-        <p>This is my first project which is a blog website. I have used HTML.</p>
+        <img src="/Project 1/IMG-20250822-WA0132.jpg" alt="Project 1 Preview">
+        <h3>Blog Website</h3>
+        <p>A simple blog website built with HTML.</p>
+        <a href="https://my-blog-html17.netlify.app/" target="_blank">View Project</a>
       </div>
 
       <div class="project-card">
-        <h3>Project 2: Portfolio Website</h3>
-        <a href="https://github.com/fahadjaleel/My-Blog-Html" target="_blank">View Project 2</a>
-        <img src="Projects 2/Screenshot 2025-08-23 122304.jpg" alt="Outlook of Project 2">
-        <p>This is my second project which is a portfolio website using HTML.</p>
+        <img src="/Projects 2/Screenshot 2025-08-23 122304.jpg" alt="Project 2 Preview">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio website created with HTML.</p>
+        <a href="https://github.com/fahadjaleel/My-Blog-Html" target="_blank">View Project</a>
       </div>
+
     </section>
 
     <!-- Contact Section -->
@@ -59,30 +60,31 @@
       <h1>Contact Me</h1>
       <form>
         <label for="Name">Name:</label>
-        <input type="text" id="Name" name="Name" placeholder="E.g Fahad J" required>
+        <input type="text" id="Name" name="Name" placeholder="Your Name" required>
 
         <label for="Email">Email:</label>
-        <input type="email" id="Email" name="Email" placeholder="E.g youremail@gmail.com" required>
-
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject" placeholder="E.g Web Development" required>
-
-        <label for="Phone">Phone Number:</label>
-        <input type="tel" id="Phone" name="Phone" placeholder="+91 1234567890" required>
+        <input type="email" id="Email" name="Email" placeholder="your@email.com" required>
 
         <label for="Message">Message:</label>
-        <textarea id="Message" name="Message" rows="4" placeholder="E.g Hello, I am interested in your services." required></textarea>
+        <textarea id="Message" name="Message" rows="4" placeholder="Write your message here..." required></textarea>
 
         <button type="submit">Submit</button>
-        <button type="reset" class="reset-btn">Reset</button>
       </form>
     </section>
   </main>
 
-  <!-- Footer Section -->
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2023 Fahad J. All rights reserved.</p>
-    <p>Follow me on social media</p>
+    <p>&copy; 2025 Fahad J. All rights reserved.</p>
   </footer>
+
+  <!-- Script for mobile menu -->
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
